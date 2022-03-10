@@ -17,3 +17,7 @@ We are creating an application which will make use of NEWS API to give user the 
 - OAuth from different platforms for registration.
 - Firebase to maintain user data and login data.
 - NEWS API to get articles related to mental health.
+
+## Wireframes
+
+<img width="617" alt="Screen Shot 2022-03-10 at 1 53 11 PM" src="https://user-images.githubusercontent.com/46044222/157760926-e1495181-fcbc-4f69-8879-ff36d9ccede8.png">
