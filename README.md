@@ -2,6 +2,12 @@
 
 We are creating an application which will make use of NEWS API to give user the latest news/articles on Mental Health. Going one step further we will also include the user's ability to create new posts to show other users how they improved their mental health.
 
+**Team Members:**
+
+Vishal Sharma (SFSU ID: 921416519) 
+######
+Khushboo Gandhi (SFSU ID: 921973309)
+
 
 # Functions
 
