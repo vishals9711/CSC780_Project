@@ -10,6 +10,7 @@ We are creating an application which will make use of NEWS API to give user the 
 - New Headline Display - This page will contain cards of different headlines with a small description. These cards will be clickable and that will navigate us to the whole article.
 - New Detail Page - This page will contain the whole article of the navigated headline.
 - Post Creation page -  This page will contain the tools to create a new post for registered users and the ability to post them.
+- Post Display Page - This page will have a table view that will display all the posts that are posted by the users.
 
 ## Dependencies
 
