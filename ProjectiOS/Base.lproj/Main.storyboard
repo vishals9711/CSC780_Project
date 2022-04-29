@@ -193,23 +193,38 @@
             </objects>
             <point key="canvasLocation" x="3186" y="383"/>
         </scene>
-        <!--News-->
+        <!--NewsViewController-->
         <scene sceneID="3R9-wJ-nWp">
             <objects>
-                <viewController id="d7s-UL-pui" customClass="MainViewController" customModule="ProjectiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="d7s-UL-pui" userLabel="NewsViewController" customClass="NewsViewController" customModule="ProjectiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Zv-cD-spK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Skl-Jh-5HD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="i5A-oX-oss"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Skl-Jh-5HD" firstAttribute="leading" secondItem="i5A-oX-oss" secondAttribute="leading" id="8G0-Kv-lFh"/>
+                            <constraint firstItem="i5A-oX-oss" firstAttribute="bottom" secondItem="Skl-Jh-5HD" secondAttribute="bottom" id="GSG-VY-Z0o"/>
+                            <constraint firstItem="Skl-Jh-5HD" firstAttribute="top" secondItem="i5A-oX-oss" secondAttribute="top" id="M6Y-zE-PJa"/>
+                            <constraint firstItem="i5A-oX-oss" firstAttribute="trailing" secondItem="Skl-Jh-5HD" secondAttribute="trailing" id="i3b-5N-TYc"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="News" image="News" badgeValue="News" selectedImage="News" id="YD0-Da-Hn0">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="Skl-Jh-5HD" id="OFY-Kp-nmH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DFe-LA-As9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3133" y="-398"/>
+            <point key="canvasLocation" x="3131.884057971015" y="-398.4375"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fRy-UF-2fp">
@@ -267,6 +282,21 @@
                 <exit id="Bbv-LW-ceG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3131.884057971015" y="1157.8125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Aei-Pq-2JN">
+            <objects>
+                <viewController id="2Hb-t9-zdB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="skz-dy-ZtJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JqM-ib-JsK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rh3-dP-0Bz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4277" y="-614"/>
         </scene>
     </scenes>
     <resources>

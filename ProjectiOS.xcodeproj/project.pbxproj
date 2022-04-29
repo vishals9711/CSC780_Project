@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3223D42B281B876C0098521B /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223D42A281B876C0098521B /* NewsViewController.swift */; };
+		3223D42D281B88D10098521B /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223D42C281B88D10098521B /* Networking.swift */; };
+		3223D42F281B89C80098521B /* NewsArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223D42E281B89C80098521B /* NewsArticle.swift */; };
 		3273C4F4281AE65E005CA126 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273C4F3281AE65E005CA126 /* AppDelegate.swift */; };
 		3273C4F6281AE65E005CA126 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273C4F5281AE65E005CA126 /* SceneDelegate.swift */; };
 		3273C4F8281AE65E005CA126 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273C4F7281AE65E005CA126 /* SignupViewController.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3223D42A281B876C0098521B /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		3223D42C281B88D10098521B /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		3223D42E281B89C80098521B /* NewsArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticle.swift; sourceTree = "<group>"; };
 		3273C4F0281AE65E005CA126 /* ProjectiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3273C4F3281AE65E005CA126 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3273C4F5281AE65E005CA126 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +87,9 @@
 				3273C512281AF583005CA126 /* MainViewController.swift */,
 				3273C514281AFC13005CA126 /* LoginViewController.swift */,
 				3273C516281B50D0005CA126 /* MoreViewController.swift */,
+				3223D42A281B876C0098521B /* NewsViewController.swift */,
+				3223D42C281B88D10098521B /* Networking.swift */,
+				3223D42E281B89C80098521B /* NewsArticle.swift */,
 			);
 			path = ProjectiOS;
 			sourceTree = "<group>";
@@ -168,7 +177,10 @@
 				3273C513281AF583005CA126 /* MainViewController.swift in Sources */,
 				3273C4F8281AE65E005CA126 /* SignupViewController.swift in Sources */,
 				3273C4F4281AE65E005CA126 /* AppDelegate.swift in Sources */,
+				3223D42D281B88D10098521B /* Networking.swift in Sources */,
+				3223D42F281B89C80098521B /* NewsArticle.swift in Sources */,
 				3273C517281B50D0005CA126 /* MoreViewController.swift in Sources */,
+				3223D42B281B876C0098521B /* NewsViewController.swift in Sources */,
 				3273C515281AFC13005CA126 /* LoginViewController.swift in Sources */,
 				3273C4F6281AE65E005CA126 /* SceneDelegate.swift in Sources */,
 			);
