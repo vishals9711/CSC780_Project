@@ -6,14 +6,8 @@
 //
 
 import UIKit
-
-class ArticleCell: UITableViewCell {
-    
-    @IBOutlet weak var articleHeading: UILabel!
-    @IBOutlet weak var articleImage: UIImageView!
-    @IBOutlet weak var articleDescription: UITextView!
-    
-}
+import Foundation
+import SwiftUI
 
 
 
@@ -55,7 +49,8 @@ class NewsViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         print("***")
         cell.articleHeading?.text = (article.title ?? "SOmthing").isEmpty ? "No Titlle" : article.title;
         cell.articleDescription?.text = (article.description ?? "somthing").isEmpty ? "No Description" : article.description;
-//        let tempImageURL:URL = URL(string : article.urlToImage ?? "")!
+        cell.articleImage.loadFrom(URLAddress: article.urlToImage!)
+
 //        cell.articleImage.load(url: tempImageURL)
         return cell;
 
