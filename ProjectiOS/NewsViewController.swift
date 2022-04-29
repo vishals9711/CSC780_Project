@@ -7,10 +7,15 @@
 
 import UIKit
 
-
 class ArticleCell: UITableViewCell {
     
+    @IBOutlet weak var articleHeading: UILabel!
+    @IBOutlet weak var articleImage: UIImageView!
+    @IBOutlet weak var articleDescription: UITextView!
+    
 }
+
+
 
 class NewsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
@@ -42,14 +47,16 @@ class NewsViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell") as? ArticleCell else {
-            print("11111")
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCellTemp") as? ArticleCell else {
             return UITableViewCell()
         }
         
         let article = articles[indexPath.row];
         print("***")
-        cell.textLabel?.text = (article.title ?? "").isEmpty ? "No Author" : article.title;
+        cell.articleHeading?.text = (article.title ?? "SOmthing").isEmpty ? "No Titlle" : article.title;
+        cell.articleDescription?.text = (article.description ?? "somthing").isEmpty ? "No Description" : article.description;
+//        let tempImageURL:URL = URL(string : article.urlToImage ?? "")!
+//        cell.articleImage.load(url: tempImageURL)
         return cell;
 
     }
