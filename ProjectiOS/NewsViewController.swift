@@ -55,8 +55,22 @@ class NewsViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(articles[indexPath.row]);
-        return;
+        performSegue(withIdentifier: "ToWebViewSegue", sender: indexPath)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let webViewController = segue.destination as? WebViewController else{
+            return
+        }
+        
+       
+        guard let indexPath = sender as? IndexPath else {
+            return
+        }
+        
+        let articleUrl = articles[indexPath.row].url;
+        webViewController.articleUrl = articleUrl;
+
     }
 
 }
