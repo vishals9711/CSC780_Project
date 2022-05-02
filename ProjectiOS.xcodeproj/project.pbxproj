@@ -25,6 +25,8 @@
 		3273C513281AF583005CA126 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273C512281AF583005CA126 /* MainViewController.swift */; };
 		3273C515281AFC13005CA126 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273C514281AFC13005CA126 /* LoginViewController.swift */; };
 		3273C517281B50D0005CA126 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273C516281B50D0005CA126 /* MoreViewController.swift */; };
+		32A27CD9281F4DCB00B6B325 /* PostThoughtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A27CD8281F4DCB00B6B325 /* PostThoughtsViewController.swift */; };
+		32A27CDB281F51BC00B6B325 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A27CDA281F51BC00B6B325 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		3273C512281AF583005CA126 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3273C514281AFC13005CA126 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3273C516281B50D0005CA126 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		32A27CD8281F4DCB00B6B325 /* PostThoughtsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostThoughtsViewController.swift; sourceTree = "<group>"; };
+		32A27CDA281F51BC00B6B325 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 				3223D42E281B89C80098521B /* NewsArticle.swift */,
 				3223D430281B97E60098521B /* WebViewController.swift */,
 				3223D432281B9FC00098521B /* ArticleCell.swift */,
+				32A27CD8281F4DCB00B6B325 /* PostThoughtsViewController.swift */,
+				32A27CDA281F51BC00B6B325 /* Post.swift */,
 			);
 			path = ProjectiOS;
 			sourceTree = "<group>";
@@ -184,10 +190,12 @@
 				3273C4F8281AE65E005CA126 /* SignupViewController.swift in Sources */,
 				3273C4F4281AE65E005CA126 /* AppDelegate.swift in Sources */,
 				3223D431281B97E60098521B /* WebViewController.swift in Sources */,
+				32A27CDB281F51BC00B6B325 /* Post.swift in Sources */,
 				3223D42D281B88D10098521B /* Networking.swift in Sources */,
 				3223D42F281B89C80098521B /* NewsArticle.swift in Sources */,
 				3273C517281B50D0005CA126 /* MoreViewController.swift in Sources */,
 				3223D42B281B876C0098521B /* NewsViewController.swift in Sources */,
+				32A27CD9281F4DCB00B6B325 /* PostThoughtsViewController.swift in Sources */,
 				3273C515281AFC13005CA126 /* LoginViewController.swift in Sources */,
 				3273C4F6281AE65E005CA126 /* SceneDelegate.swift in Sources */,
 				3223D433281B9FC00098521B /* ArticleCell.swift in Sources */,

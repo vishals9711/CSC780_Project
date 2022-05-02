@@ -28,9 +28,12 @@ extension UIImageView {
 
 class ArticleCell: UITableViewCell {
     
-    @IBOutlet weak var articleHeading: UITextView!
+
+    @IBOutlet weak var articleHeading: UILabel!
     @IBOutlet weak var articleImage: UIImageView!
-    @IBOutlet weak var articleDescription: UITextView!
+    
+    @IBOutlet weak var articleDescription: UILabel!
+    
     
 }
 

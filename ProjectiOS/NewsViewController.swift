@@ -47,7 +47,7 @@ class NewsViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         let article = articles[indexPath.row];
         print("***")
-        cell.articleHeading?.text = (article.title ?? "SOmthing").isEmpty ? "No Titlle" : article.title;
+        cell.articleHeading?.text = (article.title ?? "Title").isEmpty ? "No Titlle" : article.title;
         cell.articleDescription?.text = (article.description ?? "somthing").isEmpty ? "No Description" : article.description;
         cell.articleImage.loadFrom(URLAddress: article.urlToImage!)
 
