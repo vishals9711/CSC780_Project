@@ -11,6 +11,7 @@ struct Post: Codable{
     let title: String
     let description: String
     let user_id: String
+    let date_created: Date
     
  
 }

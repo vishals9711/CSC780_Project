@@ -12,6 +12,8 @@
 		3223D42F281B89C80098521B /* NewsArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223D42E281B89C80098521B /* NewsArticle.swift */; };
 		3223D431281B97E60098521B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223D430281B97E60098521B /* WebViewController.swift */; };
 		3223D433281B9FC00098521B /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223D432281B9FC00098521B /* ArticleCell.swift */; };
+		324861392821E50600BCB164 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324861382821E50600BCB164 /* PostCell.swift */; };
+		3248613B2821E61000BCB164 /* GetPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3248613A2821E61000BCB164 /* GetPostsViewController.swift */; };
 		3273C4F4281AE65E005CA126 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273C4F3281AE65E005CA126 /* AppDelegate.swift */; };
 		3273C4F6281AE65E005CA126 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273C4F5281AE65E005CA126 /* SceneDelegate.swift */; };
 		3273C4F8281AE65E005CA126 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273C4F7281AE65E005CA126 /* SignupViewController.swift */; };
@@ -35,6 +37,8 @@
 		3223D42E281B89C80098521B /* NewsArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticle.swift; sourceTree = "<group>"; };
 		3223D430281B97E60098521B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		3223D432281B9FC00098521B /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		324861382821E50600BCB164 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		3248613A2821E61000BCB164 /* GetPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsViewController.swift; sourceTree = "<group>"; };
 		3273C4F0281AE65E005CA126 /* ProjectiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3273C4F3281AE65E005CA126 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3273C4F5281AE65E005CA126 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				3223D432281B9FC00098521B /* ArticleCell.swift */,
 				32A27CD8281F4DCB00B6B325 /* PostThoughtsViewController.swift */,
 				32A27CDA281F51BC00B6B325 /* Post.swift */,
+				324861382821E50600BCB164 /* PostCell.swift */,
+				3248613A2821E61000BCB164 /* GetPostsViewController.swift */,
 			);
 			path = ProjectiOS;
 			sourceTree = "<group>";
@@ -189,10 +195,12 @@
 				3273C513281AF583005CA126 /* MainViewController.swift in Sources */,
 				3273C4F8281AE65E005CA126 /* SignupViewController.swift in Sources */,
 				3273C4F4281AE65E005CA126 /* AppDelegate.swift in Sources */,
+				3248613B2821E61000BCB164 /* GetPostsViewController.swift in Sources */,
 				3223D431281B97E60098521B /* WebViewController.swift in Sources */,
 				32A27CDB281F51BC00B6B325 /* Post.swift in Sources */,
 				3223D42D281B88D10098521B /* Networking.swift in Sources */,
 				3223D42F281B89C80098521B /* NewsArticle.swift in Sources */,
+				324861392821E50600BCB164 /* PostCell.swift in Sources */,
 				3273C517281B50D0005CA126 /* MoreViewController.swift in Sources */,
 				3223D42B281B876C0098521B /* NewsViewController.swift in Sources */,
 				32A27CD9281F4DCB00B6B325 /* PostThoughtsViewController.swift in Sources */,

@@ -180,7 +180,7 @@
         <!--Posts-->
         <scene sceneID="KPX-Ke-7xE">
             <objects>
-                <viewController id="jwc-Sy-MYs" sceneMemberID="viewController">
+                <viewController id="jwc-Sy-MYs" customClass="GetPostsViewController" customModule="ProjectiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SqF-WQ-xPC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,7 +197,7 @@
                                 <rect key="frame" x="0.0" y="75" width="414" height="738"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="301" id="Inc-ZT-h6T">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCellTemp" rowHeight="301" id="Inc-ZT-h6T" customClass="PostCell" customModule="ProjectiOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="301"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Inc-ZT-h6T" id="iEQ-s7-LEM">
@@ -228,6 +228,10 @@
                                                 <constraint firstItem="4O2-UX-pfC" firstAttribute="top" secondItem="iEQ-s7-LEM" secondAttribute="top" constant="8" id="yFA-Qb-O31"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="postDescription" destination="g2r-3S-zO2" id="ZN3-cP-Ld0"/>
+                                            <outlet property="postTitle" destination="4O2-UX-pfC" id="rmR-XC-ZBX"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -244,6 +248,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Posts" image="posts" selectedImage="posts" id="P1E-fK-srF"/>
+                    <connections>
+                        <outlet property="tableview" destination="d4v-pt-0l3" id="uUg-ro-q1f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GrB-GH-PRq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

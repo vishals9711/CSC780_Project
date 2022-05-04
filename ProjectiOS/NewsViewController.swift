@@ -19,13 +19,20 @@ class NewsViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(ArticleCell.self, forCellReuseIdentifier: "ArticleCell")
-        super.viewDidLoad()
+        
+        navigationItem.title = "Balanced Minds"
         Task{
             do{
-                let tempArticles = try await networking.fetchRecentArticles();
+                let date = Date();
+                let df = DateFormatter();
+                df.dateFormat = "yyyy-MM-dd"
+                let dateString = df.string(from:date);
+                
+                let tempArticles = try await networking.fetchRecentArticles(date:dateString);
                 articles = tempArticles.articles
                 tableView.reloadData()
 
@@ -46,8 +53,7 @@ class NewsViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         }
         
         let article = articles[indexPath.row];
-        print("***")
-        cell.articleHeading?.text = (article.title ?? "Title").isEmpty ? "No Titlle" : article.title;
+        cell.articleHeading?.text = (article.title ?? "Title").isEmpty ? "No Title" : article.title;
         cell.articleDescription?.text = (article.description ?? "somthing").isEmpty ? "No Description" : article.description;
         cell.articleImage.loadFrom(URLAddress: article.urlToImage!)
 
