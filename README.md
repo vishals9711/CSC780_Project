@@ -20,10 +20,11 @@ Khushboo Gandhi (SFSU ID: 921973309)
 
 ## Dependencies
 
-- OAuth from different platforms for registration.
-- Firebase to maintain user data and login data.
+- Firebase Email Login and registration.
+- Firestore to store the posts created by the user.
 - NEWS API to get articles related to mental health.
+- UIKit
 
 ## Wireframes
 
-<img width="617" alt="Screen Shot 2022-03-10 at 1 53 11 PM" src="https://user-images.githubusercontent.com/46044222/157760926-e1495181-fcbc-4f69-8879-ff36d9ccede8.png">
+<img width="434" alt="Screen Shot 2022-05-11 at 9 58 54 PM" src="https://user-images.githubusercontent.com/46044222/167995406-ecbf454a-9def-4af5-b69a-c4dcd1613f8f.png">
