@@ -45,14 +45,19 @@ class PostThoughtsViewController: UIViewController {
         guard let title = titleTextview.text else {return}
         
         guard let description = descriptionTextview.text else {return}
-    
-    
-        let post = Post(title: title, description: description, user_id: userID, date_created: Date())
-        
         
 
-      do {
-          try db.collection("posts").document().setData(post.asDictionary()){
+        let post: [String: Any] = [
+            "title": title,
+            "description": description,
+            "user_id": userID,
+            "date_created": Timestamp(date: Date()),
+           
+            ]
+        
+    
+
+     db.collection("posts").document().setData(post){
               err in
                   if let err = err {
                       print("Error writing document: \(err)")
@@ -61,9 +66,7 @@ class PostThoughtsViewController: UIViewController {
                       self.dismiss(animated: true, completion: nil)
                   }
           }
-      } catch let error {
-          print("Error writing city to Firestore: \(error)")
-      }
+    
      
       }
 
