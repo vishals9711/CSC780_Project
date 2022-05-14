@@ -68,9 +68,7 @@ class GetPostsViewController: UIViewController, UITableViewDelegate, UITableView
                     return Post(title: title, description: description, user_id: user_id,date_created: date_created)
                 }
                 self.tableview.reloadData()
-                
-                
-                
+
             }
 
     }

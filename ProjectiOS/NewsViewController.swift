@@ -8,6 +8,7 @@
 import UIKit
 import Foundation
 import SwiftUI
+import FirebaseAuth
 
 
 
@@ -16,6 +17,7 @@ class NewsViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     @IBOutlet weak var tableView: UITableView!
     let networking = Networking()
     var articles: [Article] = []
+    var handle: AuthStateDidChangeListenerHandle?
 
     
     override func viewDidLoad() {
@@ -43,6 +45,36 @@ class NewsViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //start Auth Listener
+        handle = Auth.auth().addStateDidChangeListener({ auth, user in
+            if let user = user {
+                // User is signed in
+                // let the user in?
+                print("User is signed in")
+
+                            
+            } else {
+                // No user and redirect to sign up page.
+                print("redirecting to sign up page")
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let nextViewController = storyboard.instantiateViewController(withIdentifier: "LoginVC") as! LoginViewController
+                nextViewController.modalPresentationStyle = .fullScreen
+                self.present(nextViewController, animated: true, completion: nil)
+                
+                            
+            }
+        })
+        
+        
+
+    }
+    
+    
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return articles.count
     }
